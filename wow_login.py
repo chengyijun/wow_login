@@ -1,10 +1,11 @@
-import win32api
-import win32gui
-import win32con
-import time
-import win32clipboard as clipboard
-import psutil
 import os
+import time
+
+import psutil
+import win32api
+import win32clipboard as clipboard
+import win32con
+import win32gui
 from PIL import Image, ImageGrab
 from numpy import average, dot, linalg
 
@@ -168,7 +169,7 @@ class DengLuQi():
 
 if __name__ == "__main__":
     app_path = 'E:/game/oldwow/World of Warcraft/_classic_/Wow.exe'
-    username = 'cyjmmy@sohu.com'
-    password = 'zxl19890518'
+    username = ''
+    password = ''
     dlq = DengLuQi(app_path, username, password)
     dlq.login()
